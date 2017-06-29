@@ -1,7 +1,7 @@
 FROM microsoft/dotnet:latest
 
-COPY . /myapp
-WORKDIR /myapp
+COPY . /todoapi
+WORKDIR /todoapi/src
 
 RUN ["dotnet", "restore"]
 RUN ["dotnet", "build"]
